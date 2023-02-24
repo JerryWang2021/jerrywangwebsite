@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                       
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">                   -->
+    <title>Jerry Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                <a href="#home" class="nav-link">
+                    Home
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="#portfolio" class="nav-link">
+                    Portfolio
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                    contact
+                </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="toggle-button">
+            <input type="checkbox" class="checkbox" id="checkbox" value="toggle for dark mode">
+            <label for="checkbox" class="label" id="dark-mode-toggle-button">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+                <span class="visually-hidden">Toggle 4 Dark</span> 
+            </label>
+        </div>
+    </header>
+    <section class="welcome" id="home">        
+       
+        <div> 
+            <h1>Welcome to my<span>Portfolio</span></h1>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="intro-left">
+            <img src="img/intro-01.jpg" alt="frontend tech logos">
+        </div>
+        <div class="intro-middle">
+            <h2>What I can do</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum pariatur odio architecto, ex inventore voluptatem ad qui suscipit adipisci?</p>
+        </div>
+        <div class="intro-right">
+            <img src="img/intro-02.jpg" alt="backend tech logos">
+        </div>
+    </section>
+
+    <section class="about-me" id="about">
+        <img class="about-img" src="img/jerry-portfolio.jpg" alt="Jerry's portrait">
+        <h1 class="about-title">Jerry Wang</h1>
+        <h2 class="about-subtitle">Full stack Java Web Developer</h2>
+        <div class="about-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quos minima! Corporis placeat dolore et ut enim beatae perspiciatis, consequuntur unde officia eum, architecto eos reiciendis rerum autem! Laborum, error.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis soluta est modi, debitis placeat, porro assumenda numquam animi quidem delectus minus expedita ad. Odio minus neque recusandae atque quibusdam illo.</p>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h1>My Work</h1>
+        <div class="portfolio-items">
+            <!-- Portfolio Item 1 -->
+            <figure class="portfolio-item featured">
+                <img src="img/portfolio-01.jpg" alt="portfolio-item">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-desc">A short description about my project</p>
+                    <a href="#" class="portfolio-link">More info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 2 -->
+            <figure class="portfolio-item">
+                <img src="img/portfolio-02.png" alt="portfolio-item">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-desc">A short description about my project</p>
+                    <a href="#" class="portfolio-link">More info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 3 -->
+            <figure class="portfolio-item">
+                <img src="img/portfolio-03.png" alt="portfolio-item">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-desc">A short description about my project</p>
+                    <a href="#" class="portfolio-link">More info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 4 -->
+            <figure class="portfolio-item">
+                <img src="img/portfolio-04.png" alt="portfolio-item">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-desc">A short description about my project</p>
+                    <a href="#" class="portfolio-link">More info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 5 -->
+            <figure class="portfolio-item">
+                <img src="img/portfolio-05.png" alt="portfolio-item">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-desc">A short description about my project</p>
+                    <a href="#" class="portfolio-link">More info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 6 -->
+            <!-- <figure class="portfolio-item">
+                <img src="img/portfolio-06.jpg" alt="portfolio-item">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-desc">A short description about my project</p>
+                    <a href="#" class="portfolio-link"></a>
+                </figcaption>
+            </figure> -->
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact me</h1>
+        <form action="">
+            <label for="name" class="name">Name:
+                <input type="text" id="name">
+            </label>
+            <label for="email" class="email">Email:
+                <input type="email" id="email">
+            </label>
+            <label for="" class="message">Message: <textarea name="" id="message" ></textarea>
+            </label>
+
+            <input class="button" type="submit" value="SEND">
+            
+        </form>
+    </section>
+
+    <footer >
+        <p>Follow me on social media</p>
+        <div class="social-icons">
+            <img src="img/twitter.svg" alt="twitter" class="social-icon">
+            <img src="img/instagram.svg" alt="instagram" class="social-icon">
+            <img src="img/github.svg" alt="github" class="social-icon">
+        </div>
+        <p class="copyright">Copyright 2023 Jerry Wang</p>
+    </footer>
+</body>
+</html>

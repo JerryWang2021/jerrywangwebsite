@@ -1,0 +1,101 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+
+    ul {
+       list-style-type: none;
+
+       li {
+          
+          font-size: 1em;
+          display: inline;
+          padding: 0 0.5em;
+
+          a {
+            color: $dark-gray;
+            text-decoration: none;
+
+            &:hover {
+              color: $accent;
+              font-size: 1.1em;  
+            }
+          }
+
+
+       }
+
+       @include mq () {
+        font-size: 1.2em;
+        padding: 0 2.4em;
+       }
+    }
+
+    .toggle-button {
+       display: flex;
+       justify-content: flex-end;
+       padding-right: 15px;
+     }
+     
+     .checkbox {
+       opacity: 0;
+       position: absolute;
+     }
+     
+     .checkbox:focus-visible + label {
+       outline: 1.5px solid white;
+       outline-offset: 5px;
+     }
+
+     .label {
+       background-color: #01285d;
+       border-radius: 50px;
+       cursor: pointer;
+       border: 1px solid white;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 3px;
+       height: 18px;
+       width: 40px;
+     }
+     
+     .label .ball {
+       background-color: #fff;
+       border-radius: 50%;
+       position: absolute;
+       height: 22px;
+       width: 22px;
+       transform: translateX(-2px);
+       transition: transform 0.2s linear;
+     }
+     
+     .label .visually-hidden {
+       border: 0;
+       padding: 0;
+       margin: 0;
+       position: absolute !important;
+       height: 1px; 
+       width: 1px;
+       overflow: hidden;
+       clip: rect(1px 1px 1px 1px); 
+       clip: rect(1px, 1px, 1px, 1px); 
+       clip-path: inset(50%);
+       white-space: nowrap;
+     }
+     
+     .checkbox:checked + .label .ball {
+       transform: translateX(20px);
+     }
+     
+     .fa-moon,
+     .fa-sun {
+       color: white;
+     }
+}
